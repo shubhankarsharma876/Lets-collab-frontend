@@ -6,12 +6,25 @@ import ProjectDetails from './pages/project details/ProjectDetails'
 import IssueDetails from './pages/issueDetails/IssueDetails'
 import Subscription from './pages/subscription/Subscription'
 import Auth from './pages/auth/Auth'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { getUser } from './redux/Auth/Action'
+import { store } from './redux/Store'
+import { fetchProjects } from './redux/project/Action'
 
 function App() {
+  const dispatch = useDispatch();
+  const {auth} = useSelector(store=>store)
+
+  useEffect(()=>{
+    dispatch(getUser())
+    dispatch(fetchProjects({}))
+  },[auth.jwt])
 
   return (
+    
     <>
-    {true?<div>
+    {auth.user?<div>
       <Navigation />
 
       <Routes>
