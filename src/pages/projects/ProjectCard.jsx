@@ -12,6 +12,8 @@ function ProjectCard({ item }) {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    
+
     const handleDelete = () => {
         console.log("Project with id:",item.id); // Ensure this logs the correct ID
         dispatch(deleteProject(item.id)); // Pass only the ID to the action

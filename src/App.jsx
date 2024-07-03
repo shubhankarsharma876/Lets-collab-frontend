@@ -11,6 +11,7 @@ import { useEffect } from 'react'
 import { getUser } from './redux/Auth/Action'
 import { store } from './redux/Store'
 import { fetchProjects } from './redux/project/Action'
+import UpgradeSuccess from './pages/subscription/UpgradeSuccess'
 
 function App() {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function App() {
         <Route path='/project/:id' element={<ProjectDetails />} />
         <Route path='/project/:projectId/issue/:issueId' element={<IssueDetails />} />
         <Route path='/upgrade_plan' element={<Subscription />} />
+        <Route path='/upgrade_plan/success' element={<UpgradeSuccess />} />
 
 
       </Routes>

@@ -60,7 +60,7 @@ function ProjectList() {
                                     Category
                                 </h1>
                                 <div className="pt-5">
-                                    <RadioGroup className='space-y-3 pt-5' defaultValue='all' onValueChange={handleFilterCategory}>
+                                    <RadioGroup className='space-y-3 pt-5' defaultValue='all' onValueChange={(value)=>handleFilterCategory(value)}>
                                         <div className='flex items-center gap-2'>
                                             <RadioGroupItem value='all' id="r1" />
                                             <Label htmlFor='r1'>All</Label>
@@ -86,7 +86,7 @@ function ProjectList() {
                                     Tag
                                 </h1>
                                 <div className="pt-5">
-                                    <RadioGroup className='space-y-3 pt-5' defaultValue='all' onValueChange={handleFilterTags}>
+                                    <RadioGroup className='space-y-3 pt-5' defaultValue='all' onValueChange={(value)=>handleFilterTags(value)}>
                                         {tags.map((item) => (
                                             <div key={item} className='flex items-center gap-2'>
                                                 <RadioGroupItem value={item} id={`r1-${item}`} />
@@ -107,13 +107,16 @@ function ProjectList() {
                         <Input onChange={handleSearchChange} placeholder="Search project" className="40% px-9" />
                         <MagnifyingGlassIcon className='absolute top-3 left-4' />
                     </div>
+                    
                 </div>
+                
                 <div>
-                    <div className='space-y-5 min-h-[74vh]'>
+                    {project.projects==null?(<h1 className='text-center py-3 text-gray-600'>All your projects will be listed here...</h1>):(<div className='space-y-5 min-h-[74vh]'>
+                        <p className='text-gray-600 text-center'>If you finds your project are missings, prefer refreshing the page.</p>
                         {keyword
                             ? project.searchProjects?.map((item, index) => <ProjectCard item={item} key={item.id * index} />)
                             : project.projects.map((item) => <ProjectCard key={item.id} item={item} />)}
-                    </div>
+                    </div>)}
                 </div>
             </section>
         </div>

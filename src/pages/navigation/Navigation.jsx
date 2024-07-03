@@ -34,7 +34,7 @@ function Navigation() {
                 </Dialog>
                 <Button variant="ghost" className="cursor-pointer" onClick={()=>navigate("/upgrade_plan")}>Upgrade</Button>
             </div>
-            <h1 className="text-red-800">Linking of the backend is pending... Soon will be live fully. Thank You!</h1>
+            <h1 className="text-red-800">Subscription model is down due to API conflict... Soon will be live fully, Until enjoy using all features. Thank You!</h1>
             <div className='flex gap-3 items-center'>
                 <DropdownMenu>
                     <DropdownMenuTrigger>

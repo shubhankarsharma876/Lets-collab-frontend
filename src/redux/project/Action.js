@@ -1,5 +1,5 @@
 import api, { API_BASE_URL } from "@/config/api"
-import { ACCEPT_INVITATION_REQUEST, ACCEPT_INVITATION_SUCCESS, CREATE_PROJECT_REQUEST, CREATE_PROJECT_SUCCESS, DELETE_PROJECT_REQUEST, DELETE_PROJECT_SUCCESS, FETCH_PROJECT_BY_ID_SUCCESS, FETCH_PROJECT_REQUEST, FETCH_PROJECT_SUCCESS, INVITE_TO_PROJECT_REQUEST, INVITE_TO_PROJECT_SUCCESS, SEARCH_PROJECT_REQUEST, SEARCH_PROJECT_SUCCESS } from "./ActionType";
+import { ACCEPT_INVITATION_REQUEST, ACCEPT_INVITATION_SUCCESS, CREATE_PROJECT_REQUEST, CREATE_PROJECT_SUCCESS, DELETE_PROJECT_REQUEST, DELETE_PROJECT_SUCCESS, FETCH_PROJECT_BY_ID_REQUEST, FETCH_PROJECT_BY_ID_SUCCESS, FETCH_PROJECT_REQUEST, FETCH_PROJECT_SUCCESS, INVITE_TO_PROJECT_REQUEST, INVITE_TO_PROJECT_SUCCESS, SEARCH_PROJECT_REQUEST, SEARCH_PROJECT_SUCCESS } from "./ActionType";
 
 export const fetchProjects=({category,tag})=>async(dispatch)=>{
     dispatch({type:FETCH_PROJECT_REQUEST})
@@ -41,10 +41,10 @@ export const createProjects=(projectData)=>async(dispatch)=>{
 
 
 export const featchProjectsById=(id)=>async(dispatch)=>{
-    dispatch({type:FETCH_PROJECT_REQUEST_BY_ID_REQUEST})
+    dispatch({type:FETCH_PROJECT_BY_ID_REQUEST})
     try {
         const {data}=await api.get("/api/projects/"+id)
-        console.log("create projects",data);
+        console.log("fetch projects by id:",data);
         dispatch({type:FETCH_PROJECT_BY_ID_SUCCESS,project:data})
     } catch (error) {
         console.log(error);

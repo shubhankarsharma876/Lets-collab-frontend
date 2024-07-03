@@ -5,10 +5,11 @@ export const sendMessage=(messageData) => {
     return async (dispatch) => {
         dispatch({ type: actionType.SEND_MESSAGES_REQUEST });
         try {
-            const response = await api.post("/api/message/send",messageData)
+            const response = await api.post("/api/messages/send",messageData)
             dispatch({type:actionType.SEND_MESSAGES_SUCCESS,
                 message:response.data
             })
+            console.log("message send",response.data);
         } catch (error) {
             
             dispatch({type:actionType.SEND_MESSAGES_FAILURE,

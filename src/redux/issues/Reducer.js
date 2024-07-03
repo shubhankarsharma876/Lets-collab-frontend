@@ -45,7 +45,7 @@ export const issueReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                issues: [...state.issues, action.issue]
+                issues: [...state.issues, action.issues]
             }
 
         case ASSIGNED_ISSUE_TO_USER_SUCCESS:
@@ -53,7 +53,7 @@ export const issueReducer = (state = initialState, action) => {
                 ...state,
                 loading: false,
                 issues: state.issues.map((issue) =>
-                    issue.id === action.issue.id ? action.issue : issue)
+                    issue.id === action.issues.id ? action.issues : issue)
             }
 
         case DELETE_ISSUE_SUCCESS:
