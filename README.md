@@ -1,4 +1,4 @@
-# Though Bubble
+# Let's Collab
 Live at [https://letscollab.vercel.app/](https://letscollab.vercel.app/)
 ***
 
