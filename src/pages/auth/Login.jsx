@@ -22,7 +22,7 @@ const onSubmit = (data) => {
 }
 return (
   <div className='space-y-5'>
-    <h1>Register</h1>
+    <h1>Signin</h1>
     <Form {...form}>
       <form className='space-y-5' onSubmit={form.handleSubmit(onSubmit)}>
         <FormField control={form.control}
@@ -55,6 +55,7 @@ return (
         <Button type="submit" className="w-full mt-5">
           Signin
         </Button>
+        
 
       </form>
 

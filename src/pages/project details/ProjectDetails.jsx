@@ -51,7 +51,7 @@ function ProjectDetails() {
                                 <div className='flex items-center gap-2'>
 
                                     {project.projectDetails?.team.map((item) => <Avatar className="cursor-pointer" key={item}>
-                                        <AvatarFallback>{item.fullName[0]}</AvatarFallback >
+                                        <AvatarFallback>{item.fullName?item.fullName[0]:item.email[0].toUpperCase()}</AvatarFallback >
                                     </Avatar>)}
 
                                 </div>
