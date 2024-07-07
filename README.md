@@ -56,17 +56,19 @@ Make your projects seamlessly! 🖋
 
 ***
 
+### Email Sample
+
+<img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Email%20sample.png"/>
+
+***
+
 ### Invite Acceptance Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/acceptance%20page.png"/>
 
 ***
 
-### Email Sample
 
-<img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Email%20sample.png"/>
-
-***
 
 
 
