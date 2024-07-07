@@ -29,16 +29,19 @@ Make your projects seamlessly! 🖋
 ### Registration Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Registration%20page.png"/>
+
 ***
 
 ### Home Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Home.png"/>
+
 ***
 
 ### Issue Detail Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/issue%20details%20page.png"/>
+
 ***
 
 ### Subscription Page
@@ -50,14 +53,19 @@ Make your projects seamlessly! 🖋
 ### Invite Form Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/invite%20form.png"/>
+
 ***
+
 ### Invite Acceptance Page
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/acceptance%20page.png"/>
+
 ***
+
 ### Email Sample
 
 <img align="center" src="https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Email%20sample.png"/>
+
 ***
 
 
