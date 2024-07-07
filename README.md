@@ -1,5 +1,5 @@
 # Let's Collab
-Demo Video [![Lets Collab Project Video](https://github.com/shubhankarsharma876/Lets-collab-frontend/blob/main/public/Home.png)](https://youtu.be/wznao5k2HU4?si=6xUsARQ_nXiVk8O5)
+Demo Video [https://youtu.be/wznao5k2HU4?si=6xUsARQ_nXiVk8O5](https://youtu.be/wznao5k2HU4?si=6xUsARQ_nXiVk8O5)
 <br>
 Live at [https://letscollab.vercel.app/](https://letscollab.vercel.app/)
 ***
